@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4 - Styling your Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <!-- Navbar Section -->
+        <!-- I added a navigation bar to the previous project -->
+
+    <nav class="navbar">
+        <div class="navbar-brand">My Profile</div>
+
+        <div class="navbar-menu" id="navbar-menu">
+            <a href="#profile">Profile</a>
+            <a href="#projects">Projects</a>
+            <a href="#contacts">Contacts</a>
+        </div>
+        <div class="hamburger" id="hamburger">  
+            <span></span>  
+            <span></span>  
+            <span></span>  
+        </div>
+    </nav>
+
+    <header>
+        <div class="profile-picture">
+
+            <img src="cv image.jpg" alt="My picture">
+            <h1>Fernanda Toluwani Bankole Adebayo</h1>
+            <h2>I am a programmer, cuber, saxophonist and YouTuber.</h2>
+
+        </div>
+    </header>
+
+    <section>
+            <h3>About Me</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis quod nam totam id esse hic possimus quidem autem fuga sequi aperiam sed soluta reiciendis eligendi quis nulla distinctio, tenetur iusto recusandae mollitia ipsa repudiandae natus aliquam voluptate? Aut nemo eos similique magni, in qui perferendis, earum pariatur officiis, mollitia incidunt enim fugit dolor laudantium voluptatum dolorum accusamus tenetur nihil. Iusto similique necessitatibus adipisci voluptate rem minima doloribus nisi! Alias, nisi.</p>
+    </section>
+        
+        <section class="skills">
+            <h3>SKILLS</h3>
+            <ul>
+                <li>Programming</li>
+                <li>Video Editing</li>
+                <li>Basketball</li>
+                <li>Tennis</li>
+                <li>Cubing</li>
+                <li>Saxophone</li>
+            </ul>
+        </section>
+
+        <section class="portfolio">
+            <h3>Portfolio</h3>
+            <div class="grid">
+
+                <div class="project">
+                    <img src="https://images.pexels.com/photos/45243/saxophone-music-gold-gloss-45243.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                    <p>I am a saxophonist</p>
+                </div>
+
+                <div class="project">
+                    <img src="https://images.pexels.com/photos/7776189/pexels-photo-7776189.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                    <p>I am a cuber</p>
+                </div>
+
+                <div class="project">
+                    <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                    <p>I am a programmer</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="social-links">
+            <h3>Social Links</h3>
+            <a href="https://www.youtube.com/@toluwanibankole5500">YouTube Channel - Fernanda's TV</a>
+            <a href="https://web.facebook.com/groups/806180328063959">FaceBook group - The Biliophile's Burrow</a>
+        </section>
+
+
+
+            <!-- Profile Section -->
+        <section class="profile-section">
+            <div class="profile-container">
+                <h2>Update your profile</h2>
+
+                <div class="profile-form">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="johndoe@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Bio</label>
+                        <textarea id="bio" rows="4" placeholder="Tell us something about yourself" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="profession">Profession</label>
+                        <input type="text" id="profession" placeholder="Web Developer" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="linkedInProfile">LinkedIn Profile</label>
+                        <input type="url" id="linkedInProfile" placeholder="Web Developer" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <section>
+            <h3>Contact Form</h3>
+            <form action="" id="form">
+                <label for="" class="f">Full Name</label>
+                <input type="text" required class="a">
+
+                <label for="" class="f">Email</label>
+                <input type="email" required class="a">
+
+                <label for="" class="f">Message</label>
+                <input type="text" required class="e">
+
+                <input type="button" value="Submit" style="padding:20px">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Contact me at <a href="mailto:this@gmail.com">this@gmail.com</a></p>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
