@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", "itim", "system-ui";
+}
+
+body{
+    background-color: #f0f0f0;
+    color: #1d3557;
+}
+
+/* Navigation Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #1f314b;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand{
+    font-size: 1.8em; /* 1em is 8px */
+    font-weight: 700;
+    color: #a8dadc;
+}
+
+.navbar-menu{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-menu a:hover{
+    background-color: #457B9D;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width:768px) {
+    .navbar-menu{
+        display: none;
+        flex-direction: column;
+        background-color: #1d3557;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .navbar-menu.active{
+        display: flex;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+
+    .profile-container{
+        padding: 30px 20px;
+    }
+    .submit-btn{
+        padding: 12px;
+    }
+    
+}
+
+@media (max-width:480px) {
+    .profile-container{
+        padding: 20px;
+    }
+    .submit-btn{
+        font-size: 1em;
+    }
+}
+
+/* End of navigation styling */
+
+
+header {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+}
+
+.profile-picture img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+section{
+    margin: 2rem auto;
+    padding: 0 1rem;
+    max-width: 800px;
+}
+
+.skills ul{
+    list-style: none;
+    padding: 0;
+}
+
+.skills li{
+    background: #a4a4a4;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+.portfolio .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.project img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.social-links a{
+    display: block;
+}
+
+footer{
+    background: #333;
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+
+/* Profile Section */
+.profile-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+.profile-container{
+    background-color: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    max-width: 600px;
+    text-align: center;
+    width: 100%;
+}
+
+.profile-container h2{
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #1d3557;
+}
+
+.profile-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group{
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label{
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #1d3557;
+    font-weight: 600;
+}
+
+.profile-form input, .profile-form textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #a8dadc;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.profile-form input:focus, .profile-form textarea:focus{
+    outline: none;
+    border-color: #457B9D;
+}
+
+.profile-form textarea{
+    resize: vertical;
+}
+
+.submit-btn{
+    background-color: #1d3557;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover{
+    background-color: #457B9D;
+}
+
