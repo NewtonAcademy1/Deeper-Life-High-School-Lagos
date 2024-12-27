@@ -1,0 +1,106 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 10px rgb(0, 0, 0,0.1);
+}
+
+h1{
+    text-align: center;
+    color: #333;
+}
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+input[type='text']{
+    width: 75%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+#addTaskButton{
+    padding: 10px 15px;
+    background-color: #288745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#addTaskButton:hover{
+    background-color: #1c4399;
+}
+
+#todoList{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.delete-button{
+    background-color: #c82333;
+    border-radius: 4px;
+}
+.todo-Item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #faf9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: transfrom 0.3s else;
+    animation: fadeIn 0.5s ease-in-out;
+    cursor: grab;
+}
+
+.todo-Item:active{
+    cursor: grabbing;
+}
+
+.todo-Item.completed{
+    text-decoration: line-through;
+    background-color: #dfeddd;
+    transform: scale(0.90);
+}
+
+.todo-Item button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.todo-Item #addTaskButton:hover{
+    background-color: #c82333;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
