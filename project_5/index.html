@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile Page</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <!-- Navbar Section -->
+        <nav class="navbar">
+            <div class="navbar-brand">My Profile</div>
+            <div class="navbar-menu" id="navbar-menu">
+                <a href="#profile">Profile</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </nav>
+
+        <!-- Profile Section -->
+        <section class="profile-section">
+            <div class="profile-container">
+                <h2>Update your profile</h2>
+                <div class="profile-form">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" name="fullName" id="fullName" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="johndoe@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Email</label>
+                        <textarea id="bio" rows="4" placeholder="Tell us something about you"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="profession">Profession</label>
+                        <input type="text" name="profession" id="profession" placeholder="Web Developer">
+                    </div>
+                    <div class="form-group">
+                        <label for="linkedInProfile">Email</label>
+                        <input type="url" id="linkedInProfile" name="linkedInProfile" placeholder="https://linkedin.com/in/johndoe">
+                    </div>
+                    <button class="submit-btn" type="submit">Submit</button>
+                </div>
+            </div>
+
+        </section>
+        <script src="./scripts.js"></script>
+    </body>
+</html>
